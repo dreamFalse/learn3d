@@ -1,0 +1,3 @@
+D:/code/testVeo3/learncmake/build/CMakeFiles/hello.dir
+D:/code/testVeo3/learncmake/build/CMakeFiles/edit_cache.dir
+D:/code/testVeo3/learncmake/build/CMakeFiles/rebuild_cache.dir
