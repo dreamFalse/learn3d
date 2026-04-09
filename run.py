@@ -7,6 +7,7 @@ from typing import NamedTuple
 from read_write_model import * 
 from utils import * 
 from camera import Camera 
+from gaussian_model import GaussianModel 
 
 
 def getNerfppNorm(cam_info):
@@ -136,20 +137,6 @@ def read_colmap_scene(source_path : str, images_path:str):
     scene_info = SceneInfo(point_cloud = point3d, camerainfos=cam_infos, ply_path=None, nerf_normalization=nerf_normalization)
 
     return scene_info 
-    
-
-class GaussianModel:
-    def __init__(self, sh_degree):
-        self.activate_sh_degree = 0 
-        self.max_sh_degree = sh_degree 
-        self.xyzs = torch.empty(0) 
-        self.opacity = torch.empty(0) 
-        self.scale = torch.empty(0) 
-        self.rotation = torch.empty(0) 
-        self.SHs = torch.empty(0) 
-
-    def create_from_pcd(self, points3d):
-        pass 
 
 
 def cameralist_form_caminfos(cam_infos):
