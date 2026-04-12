@@ -5,7 +5,7 @@ import torch.nn as nn
 import sys 
 from typing import NamedTuple
 from read_write_model import * 
-from utils import * 
+from utils.utils import * 
 from camera import Camera 
 from gaussian_model import GaussianModel 
 

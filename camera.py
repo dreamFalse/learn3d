@@ -3,7 +3,7 @@ import os
 import sys 
 import torch 
 from PIL import Image 
-from utils import * 
+from utils.utils import * 
 
 def PILtoTorch(pil_image):
     image = torch.from_numpy(np.array(pil_image)) / 255.0 
